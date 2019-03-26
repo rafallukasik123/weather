@@ -49,7 +49,7 @@ Suggestions = () => {
          placeholder="Search for..."
        onInput={this.filterCity.bind(this)}
         onChange={this.props.changeinput}
-
+      
         
        />
        <input type="submit" value="Get Weather"/>

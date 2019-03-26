@@ -40,9 +40,9 @@ handleSubmit= (e) =>{
   
   axios.get(`http://api.openweathermap.org/data/2.5/forecast?q=${name}&APPID=${api_key}`)
     .then(res => {
-      //const wheather_object = res.data.list[0].weather[0].main;
+     
       const wheather_object = res.data;
-      console.log(wheather_object);
+     
       this.setState({
         wheather_array : wheather_object.list,
         wheather_object
