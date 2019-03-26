@@ -36,7 +36,7 @@ handleInputChange = (e) => {
 handleSubmit= (e) =>{
   e.preventDefault();
   const name=this.state.name_city;
-  console.log(name);
+  
   
   axios.get(`http://api.openweathermap.org/data/2.5/forecast?q=${name}&APPID=${api_key}`)
     .then(res => {

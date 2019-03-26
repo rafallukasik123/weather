@@ -11,7 +11,7 @@ constructor(props){
 
   render() {
 
-    console.log(this.props.object);
+   
     if(this.props.object===''){
       return (
         <section>
