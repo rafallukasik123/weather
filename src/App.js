@@ -3,6 +3,7 @@ import Title from './components/Title';
 import Form from './components/Form';
 import Weather from './components/Weather';
 import axios from 'axios';
+import main from './style/main.scss'
 
 const api_key='10d35fcce7c02936d78262262d8ebda4';
 class App extends Component {
@@ -19,11 +20,7 @@ this.state={
 
   
 
-  componentDidMount(){
-    
-    
-    
-  }
+  
 
 handleInputChange = (e) => {
   e.preventDefault();

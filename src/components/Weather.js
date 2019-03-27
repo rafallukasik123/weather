@@ -10,7 +10,7 @@ constructor(props){
 
 
   render() {
-
+     
    
     if(this.props.object===''){
       return (
@@ -22,6 +22,10 @@ constructor(props){
       );
     }
     else{
+console.log(this.props.object);
+    
+     
+     
 
 
         const icon=this.props.object.list[0].weather[0].icon;
@@ -30,8 +34,10 @@ constructor(props){
         const location=this.props.object.city.name;
         const main=this.props.object.list[0].weather[0].main;
         const description=this.props.object.list[0].weather[0].description;
-        let temperature=this.props.object.list[0].main.temp/272.15;
+        let temperature=this.props.object.list[0].main.temp-272.15;
         temperature=temperature.toFixed(2);
+        
+
 
         const icon2=this.props.object.list[1].weather[0].icon;
         const iconurlnow2 = "http://openweathermap.org/img/w/" + icon2 + ".png";
@@ -39,7 +45,7 @@ constructor(props){
         
         const main2=this.props.object.list[1].weather[0].main;
         const description2=this.props.object.list[1].weather[0].description;
-        let temperature2=this.props.object.list[1].main.temp/272.15;
+        let temperature2=this.props.object.list[1].main.temp-272.15;
         temperature2=temperature2.toFixed(2);
 
 
