@@ -1,0 +1,30 @@
+.wheather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color : #051937;
+
+    .wheather_location{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3%;
+        span{
+            padding: 5%;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 30px;
+        }
+    }
+
+    .wheather_icon{
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+}

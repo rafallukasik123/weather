@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import name from '../city.list.json'; 
+import title from '../style/form.scss';
 const citylist = [];
 
 class Form extends Component {
@@ -46,11 +47,11 @@ suggestions = () => {
         </li>
         
       ))
-      if(options.length<30){
-        return <ul>{options}</ul>
+      if(options.length<15){
+        return <ul className="ul_list">{options}</ul>
       }
       else{
-        return <ul></ul>;
+        return <ul ></ul>;
       }
       
       
@@ -95,34 +96,31 @@ componentDidMount(){
 
   });
 
-  /*promise1.then(
-    citylist.forEach(element => {
-      console.log(element);
-    })
-  );*/
 
-
-
- 
 }
 
   render() {
 
   
-console.log(citylist.length);
+
   
 
     return (
      
-       <form onSubmit={this.props.input_submit}>
+       <form className="form"  onSubmit={this.props.input_submit}>
+     
+      <div>
          <input
+        className="search"
          placeholder="Search for..."
        onInput={this.filterCity.bind(this)}
         onChange={this.props.changeinput}
-      
+        required
         
        />
-       <input type="submit" value="Get Weather"/>
+       <input className="button" type="submit" value="Get Weather"/>
+     
+       </div>
        <this.suggestions/>
 
        </form>

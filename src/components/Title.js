@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import title from '../style/title.scss';
 
 
 class Title extends Component {

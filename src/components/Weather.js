@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import weather from '../style/weather.scss';
 
 class Weather extends Component {
 constructor(props){
@@ -22,7 +22,7 @@ constructor(props){
       );
     }
     else{
-console.log(this.props.object);
+//console.log(this.props.object);
     
      
      
@@ -50,17 +50,17 @@ console.log(this.props.object);
 
 
       return (
-        <section>
-                <div>
-                <p> <span>Location:</span>  <span>{location}</span>  </p>
+        <section className="wheather_section">
+                <div className="wheather">
+                <p className="wheather_location"> <h2>Location:</h2>  <span>{location}</span>  </p>
                 <p> <span>Weather last update <span>{time}</span>:</span>  <span>{main}</span>  : <span>{description}</span> </p>
-                <div><img src={iconurlnow} alt="icon weather"/>  <span>Current temperature : {temperature} &#8451; </span>    </div>
+                <div className="wheather_icon"><img src={iconurlnow} alt="icon weather"/>  <span>Current temperature : {temperature} &#8451; </span>    </div>
                 </div>
 
-                  <div>
+                  <div className="wheather">
                     <h2>Next hours</h2>
                     <p> <span>Weather next update <span>{time2}</span>:</span>  <span>{main2}</span>  : <span>{description2}</span> </p>
-                <div><img src={iconurlnow2} alt="icon weather"/>  <span>Predicted temperature : {temperature2} &#8451; </span>    </div>
+                <div className="wheather_icon"><img src={iconurlnow2} alt="icon weather"/>  <span>Predicted temperature : {temperature2} &#8451; </span>    </div>
 
                   </div>
         </section>
