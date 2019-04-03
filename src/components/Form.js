@@ -66,7 +66,7 @@ suggestions = () => {
 }
 componentDidMount(){
 
-  let promise1= new Promise(function(){
+  /*let promise1= new Promise(function(){
     for (let index = 0; index < name.length; index++) {
       if(name[index].country=='PL'){
         const element = name[index].name;
@@ -94,7 +94,7 @@ componentDidMount(){
       
     }
 
-  });
+  });*/
 
 
 }

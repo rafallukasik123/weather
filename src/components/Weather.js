@@ -22,7 +22,7 @@ constructor(props){
       );
     }
     else{
-//console.log(this.props.object);
+console.log(this.props.object);
     
      
      
