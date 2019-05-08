@@ -66,7 +66,14 @@ suggestions = () => {
 }
 componentDidMount(){
 
-  /*let promise1= new Promise(function(){
+  fetch("../city.list.json").then(res=>res.json()).then(
+res =>
+
+console.log(res)
+
+  )
+  
+  /*{
     for (let index = 0; index < name.length; index++) {
       if(name[index].country=='PL'){
         const element = name[index].name;
@@ -94,7 +101,7 @@ componentDidMount(){
       
     }
 
-  });*/
+  }*/
 
 
 }
